@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes and default -->
+    <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
+    <remote name="TeamWin" fetch="https://github.com/TeamWin"/>
+
+    <default revision="refs/tags/android-12.1.0_r4" remote="aosp" sync-j="4"/>
+
+
+    <!-- DRM lib (used by minui/minuitwrp on some targets) -->
+    <project path="libs/libdrm" name="platform/external/libdrm" groups="pdk"/>
+    <project path="libs/libbase" name="platform/system/libbase" groups="pdk"/>
+
+    <project name="platform/external/libpng" path="external/libpng"/>
+    <project name="platform/external/zlib" path="external/zlib"/>
+    <project name="platform/external/freetype" path="external/freetype"/>
+  
+
+
+      <project path="system/core" name="platform/system/core" groups="pdk" />
+      <project path="bionic" name="platform/bionic" groups="pdk" />
+
+    <project path="system/tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="pdk"/>
+
+    <include name="grom.xml"/>
+</manifest>

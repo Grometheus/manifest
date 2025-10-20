@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="Grom" fetch="https://github.com/Grometheus"/>
+
+    <project name="minuitwrp" remote="Grom" path="libs/miniuitwrp" revision="main"/>
+
+    <project name="grom_maker" remote="Grom" path="grom_maker" revision="main"/>
+    <project name="grom_main" remote="Grom" path="grom_main" revision="main"/>
+</manifest>
